@@ -334,7 +334,6 @@ class EmergencyScreen extends StatelessWidget {
   }
 }
 
-// NOVO WIDGET AUXILIAR ADICIONADO AQUI
 class EmergencyContactTile extends StatelessWidget {
   final String title;
   final String phone;
@@ -360,7 +359,7 @@ class EmergencyContactTile extends StatelessWidget {
         subtitle: Text(phone,
             style:
             const TextStyle(fontSize: 18, color: AppColors.textSecondary)),
-        // Se quiser adicionar função de ligar no futuro, pode ser feita aqui.
+        
         onTap: () {},
       ),
     );
@@ -411,7 +410,7 @@ class FirstTrimesterScreen extends StatelessWidget {
   const FirstTrimesterScreen({super.key});
   @override
   Widget build(BuildContext context) {
-    // ATUALIZADO: Adicionamos uma chave de persistência única
+   
     return TrimesterPageView(
       pages: firstTrimesterPages,
       persistenceKey: 'checklist_trimestre_1',
